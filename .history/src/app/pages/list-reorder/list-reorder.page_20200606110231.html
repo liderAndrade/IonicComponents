@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>List - Reorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-reorder-group>
+
+      <ion-item *ngFor="let item of personas">
+        <ion-label>
+          {{item}}
+        </ion-label>
+      </ion-item>
+
+    </ion-reorder-group>
+
+  </ion-list>
+</ion-content>

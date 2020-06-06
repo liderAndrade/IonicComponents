@@ -13,52 +13,92 @@ const routes: Routes = [
   },
   {
     path: 'actionsheet',
-    loadChildren: () => import('./pages/actionsheet/actionsheet.module').then( m => m.ActionsheetPageModule)
+    loadChildren: () => import('./pages/actionsheet/actionsheet.module').then(m => m.ActionsheetPageModule)
   },
   {
     path: 'alert',
-    loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
+    loadChildren: () => import('./pages/alert/alert.module').then(m => m.AlertPageModule)
   },
   {
     path: 'avatar',
-    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+    loadChildren: () => import('./pages/avatar/avatar.module').then(m => m.AvatarPageModule)
   },
   {
     path: 'buttons',
-    loadChildren: () => import('./pages/buttons/buttons.module').then( m => m.ButtonsPageModule)
+    loadChildren: () => import('./pages/buttons/buttons.module').then(m => m.ButtonsPageModule)
   },
   {
     path: 'cards',
-    loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+    loadChildren: () => import('./pages/cards/cards.module').then(m => m.CardsPageModule)
   },
   {
     path: 'checkbox',
-    loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+    loadChildren: () => import('./pages/checkbox/checkbox.module').then(m => m.CheckboxPageModule)
   },
   {
     path: 'datetime',
-    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+    loadChildren: () => import('./pages/datetime/datetime.module').then(m => m.DatetimePageModule)
   },
   {
     path: 'fab',
-    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+    loadChildren: () => import('./pages/fab/fab.module').then(m => m.FabPageModule)
   },
   {
     path: 'grid',
-    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+    loadChildren: () => import('./pages/grid/grid.module').then(m => m.GridPageModule)
   },
   {
     path: 'infinitescrool',
-    loadChildren: () => import('./pages/infinitescrool/infinitescrool.module').then( m => m.InfinitescroolPageModule)
+    loadChildren: () => import('./pages/infinitescrool/infinitescrool.module').then(m => m.InfinitescroolPageModule)
   },
   {
     path: 'inputs',
-    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+    loadChildren: () => import('./pages/inputs/inputs.module').then(m => m.InputsPageModule)
   },
   {
     path: 'list',
-    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+    loadChildren: () => import('./pages/list/list.module').then(m => m.ListPageModule)
   },
+  {
+    path: 'list-reorder',
+    loadChildren: () => import('./pages/list-reorder/list-reorder.module').then(m => m.ListReorderPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then(m => m.LoadingPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then(m => m.ModalPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'progressbar',
+    loadChildren: () => import('./pages/progressbar/progressbar.module').then( m => m.ProgressbarPageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  }
 ];
 
 @NgModule({

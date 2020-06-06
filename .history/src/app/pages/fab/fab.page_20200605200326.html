@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fab</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i = index">
+      Item {{i + 1}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Este es el footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

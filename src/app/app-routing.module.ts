@@ -39,6 +39,26 @@ const routes: Routes = [
     path: 'datetime',
     loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
+  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'infinitescrool',
+    loadChildren: () => import('./pages/infinitescrool/infinitescrool.module').then( m => m.InfinitescroolPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
 ];
 
 @NgModule({
